@@ -1,0 +1,114 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.88.250:80
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 14:08:40] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 14:08:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:main:Exception on /predict [POST]
+Traceback (most recent call last):
+  File "/Users/batiukmaks/PycharmProjects/NN-MLOps-Lab/venv/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/batiukmaks/PycharmProjects/NN-MLOps-Lab/venv/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/batiukmaks/PycharmProjects/NN-MLOps-Lab/venv/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/batiukmaks/PycharmProjects/NN-MLOps-Lab/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "main.py", line 18, in predict
+    tensor = convert_to_tensor(data)  # Implement this function
+  File "main.py", line 12, in convert_to_tensor
+    tensor = torch.tensor([data], dtype=torch.float)
+TypeError: must be real number, not dict
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 14:09:12] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /predict [POST]
+Traceback (most recent call last):
+  File "/Users/batiukmaks/PycharmProjects/NN-MLOps-Lab/venv/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/batiukmaks/PycharmProjects/NN-MLOps-Lab/venv/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/batiukmaks/PycharmProjects/NN-MLOps-Lab/venv/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/batiukmaks/PycharmProjects/NN-MLOps-Lab/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "main.py", line 18, in predict
+    tensor = convert_to_tensor(data)
+  File "main.py", line 12, in convert_to_tensor
+    tensor = torch.tensor([data], dtype=torch.float)
+TypeError: must be real number, not dict
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 14:09:58] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+ERROR:main:Exception on /predict [POST]
+Traceback (most recent call last):
+  File "/Users/batiukmaks/PycharmProjects/NN-MLOps-Lab/venv/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/batiukmaks/PycharmProjects/NN-MLOps-Lab/venv/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/batiukmaks/PycharmProjects/NN-MLOps-Lab/venv/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/batiukmaks/PycharmProjects/NN-MLOps-Lab/venv/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "main.py", line 18, in predict
+    tensor = convert_to_tensor(data)
+  File "main.py", line 12, in convert_to_tensor
+    tensor = torch.tensor([data], dtype=torch.float)
+TypeError: must be real number, not dict
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 14:10:53] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.88.250:80
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 103-230-265
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 14:11:38] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in '/Users/batiukmaks/PycharmProjects/NN-MLOps-Lab/main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 103-230-265
+INFO:werkzeug: * Detected change in '/Users/batiukmaks/PycharmProjects/NN-MLOps-Lab/main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 103-230-265
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.88.250:80
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 103-230-265
+INFO:root:Input: {'data': [0.3109577744448072, 0.5341557807922974, 0.6481861743226304, 0.20285541654834083, 0.6740925668016929, 0.17093699680908103, 0.135231794280111, 0.7290645569889961, 0.9024027949266297, 0.5023093224594445]}, Output: [[0.3646886944770813]]
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 14:12:34] "POST /predict HTTP/1.1" 200 -
+INFO:root:Input: {'data': [0.3109577744448072, 0.5341557807922974, 0.6481861743226304, 0.20285541654834083, 0.6740925668016929, 0.17093699680908103, 0.135231794280111, 0.7290645569889961, 0.9024027949266297, 0.5023093224594445]}, Output: [[0.3646886944770813]]
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 14:12:37] "POST /predict HTTP/1.1" 200 -
+INFO:root:Input: {'data': [0.3109577744448072, 0.5341557807922974, 0.6481861743226304, 0.20285541654834083, 0.6740925668016929, 0.17093699680908103, 0.135231794280111, 0.7290645569889961, 0.9024027949266297, 0.5023093224594445]}, Output: [[0.3646886944770813]]
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 14:12:38] "POST /predict HTTP/1.1" 200 -
+INFO:root:Input: {'data': [0.3109577744448072, 0.5341557807922974, 0.6481861743226304, 0.20285541654834083, 0.6740925668016929, 0.17093699680908103, 0.135231794280111, 0.7290645569889961, 0.9024027949266297, 0.5023093224594445]}, Output: [[0.3646886944770813]]
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 14:12:38] "POST /predict HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 14:13:23] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+INFO:root:Input: {'data': [0.2540481163398799, 0.24754376636933406, 0.7534001941612539, 0.1809435136118267, 0.4010860795827641, 0.9209861490952486, 0.8897445961298115, 0.9467976543915146, 0.0014498425114868319, 0.8969896775742082]}, Output: [[0.23310798406600952]]
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 14:13:30] "POST /predict HTTP/1.1" 200 -
+INFO:root:Input: {'data': [0.9228658278497769, 0.4502845540276411, 0.9825751275352358, 0.6451163593225948, 0.3519763945523148, 0.030318475910785625, 0.9077234922009569, 0.7241554488560803, 0.3383358037502182, 0.7020127705656397]}, Output: [[0.7625374794006348]]
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 14:13:53] "POST /predict HTTP/1.1" 200 -
+INFO:root:Input: {'data': [0.9228658278497769, 0.4502845540276411, 0.9825751275352358, 0.6451163593225948, 0.3519763945523148, 0.030318475910785625, 0.9077234922009569, 0.7241554488560803, 0.3383358037502182, 0.7020127705656397]}, Output: [[0.7625374794006348]]
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 14:14:12] "POST /predict HTTP/1.1" 200 -
+INFO:root:Input: {'data': [0.9228658278497769, 0.4502845540276411, 0.9825751275352358, 0.6451163593225948, 0.3519763945523148, 0.030318475910785625, 0.9077234922009569, 0.7241554488560803, 0.3383358037502182, 0.7020127705656397]}, Output: [[0.7625374794006348]]
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 14:14:15] "POST /predict HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 14:20:35] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+INFO:root:Input: {'data': [0.3109613046541994, 0.5341599247707904, 0.648184974583375, 0.20285681527917493, 0.6740935654028891, 0.17092890645133255, 0.13522549146057442, 0.7290637238236132, 0.902400177365622, 0.5023080958712896]}, Output: [[0.36469200253486633]]
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 14:20:57] "POST /predict HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/batiukmaks/PycharmProjects/NN-MLOps-Lab/main.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 103-230-265
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:80
+ * Running on http://192.168.88.250:80
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 103-230-265
+INFO:root:Input: {'data': [0.3109613046541994, 0.5341599247707904, 0.648184974583375, 0.20285681527917493, 0.6740935654028891, 0.17092890645133255, 0.13522549146057442, 0.7290637238236132, 0.902400177365622, 0.5023080958712896]}, Output: [[0.36469200253486633]]
+INFO:werkzeug:127.0.0.1 - - [24/May/2024 14:32:40] "POST /predict HTTP/1.1" 200 -
